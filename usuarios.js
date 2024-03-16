@@ -16,7 +16,7 @@ app.get('/usuarios', (req, res) => {
 
 app.get('/usuarios/:id', (req, res) => {
     const alunoID = req.params.id;
-    console.log('API get por id');
+    console.log('API get usuários por id');
     res.status(200).send(users.find(x => x.id == alunoID));
 })
 
